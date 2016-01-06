@@ -12,7 +12,7 @@
 `npm install psi -g`
 
 ## Budgets
-### Eforace a performance budget. Track impact of every commit.
+### Enforce a performance budget. Track impact of every commit.
 [timkadlec.com/2014/11/performance-budget-metrics](Performance Budget Metrics)
 - Milestone timings
     - load time, time to interact
