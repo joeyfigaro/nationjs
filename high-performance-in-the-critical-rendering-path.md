@@ -24,7 +24,7 @@
     yslow grade, pagespeed score, etc.
 
 ## Beyond Minification
-TCP, HTTP(S), HTML, CSS, Fonts, Images, JS
+### TCP, HTTP(S), HTML, CSS, Fonts, Images, JS
 TCP: Browser Networking from O'Reilly
 
 increase initial TCP cwnd size
@@ -33,9 +33,9 @@ increase initial TCP cwnd size
     - accelerates connection ramp us
 
 Disable slow-start restart (SSR)
-    - long-lived, bursty TCP connections can't afford SSR
-    - improve HTTP performance by disabling it
-`sysctl -w net.ipv4.tcp_slow_start_after_idle = 0`
+```sysctl -w net.ipv4.tcp_slow_start_after_idle = 0```
+- long-lived, bursty TCP connections can't afford SSR
+- improve HTTP performance by disabling it
 
 ## HTTP: make less requests
 - GZip all the text
@@ -53,9 +53,9 @@ Disable slow-start restart (SSR)
 - Proactive Server Push
 
 ## Render server-side
-*Become a single page app later*
-Defer non-critical asset loading
-Keep it accessible with *aria*
+### Become a single page app later
+- Defer non-critical asset loading
+- Keep it accessible with *aria*
 
 ## Inline critical CSS
 - Remove unused styles
@@ -78,8 +78,8 @@ Keep it accessible with *aria*
 - Use CSS for simple icons
 
 ## Research and Tools
-**FOIT**
-**PSI on NPM**
-**underscore-cli**
-**gulp-yslow/yslow**
-**gulp-perfbudget**
+- FOIT
+- PSI on NPM
+- underscore-cli
+- gulp-yslow/yslow
+- gulp-perfbudget
